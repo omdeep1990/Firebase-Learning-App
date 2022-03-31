@@ -3,6 +3,7 @@ package com.omdeep.firebaselearningapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -21,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         firebaseDb = new FirebaseDb();
+
+        binding.btnGetData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, DisplayActivity.class));
+            }
+        });
         binding.btnInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
