@@ -1,4 +1,4 @@
-package com.omdeep.firebaselearningapp;
+package com.omdeep.firebaselearningapp.Utility;
 
 import android.content.Context;
 import android.graphics.Bitmap;

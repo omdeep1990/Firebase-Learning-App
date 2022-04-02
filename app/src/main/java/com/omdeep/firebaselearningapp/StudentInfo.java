@@ -5,6 +5,15 @@ public class StudentInfo {
     private String firstName;
     private String lastName;
     private long phoneNumber;
+    private String key;
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -22,8 +31,8 @@ public class StudentInfo {
         this.lastName = lastName;
     }
 
-    public long getPhoneNumber() {
-        return phoneNumber;
+    public String getPhoneNumber() {
+        return String.valueOf(phoneNumber);
     }
 
     public void setPhoneNumber(long phoneNumber) {

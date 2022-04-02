@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseLearningApp">
         <activity
-            android:name=".DisplayActivity"
+            android:name=".Activities.DisplayInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

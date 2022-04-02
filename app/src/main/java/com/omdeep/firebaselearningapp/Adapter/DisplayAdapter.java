@@ -1,4 +1,4 @@
-package com.omdeep.firebaselearningapp;
+package com.omdeep.firebaselearningapp.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.omdeep.firebaselearningapp.Interfaces.OnItemClickListenerFirebase;
+import com.omdeep.firebaselearningapp.StudentInfo;
 import com.omdeep.firebaselearningapp.databinding.DisplayItemsBinding;
 
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull DisplayAdapter.MyViewHolder holder, int position) {
         holder.binding.tvFullName.setText(studentInfoList.get(position).getFirstName()+" "+studentInfoList.get(position).getLastName());
+        holder.binding.tvMobileNumber.setText(String.valueOf(studentInfoList.get(position).getPhoneNumber()));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

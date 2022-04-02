@@ -1,4 +1,4 @@
-package com.omdeep.firebaselearningapp;
+package com.omdeep.firebaselearningapp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.view.View;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.omdeep.firebaselearningapp.Database.FirebaseDb;
+import com.omdeep.firebaselearningapp.StudentInfo;
+import com.omdeep.firebaselearningapp.Utility.Utility;
 import com.omdeep.firebaselearningapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
